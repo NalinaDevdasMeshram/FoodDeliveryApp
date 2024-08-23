@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
-import "./Loginpopup.css";
+import "./LoginPopUp.css";
 import { assets } from "../../assets/assets";
 const Loginpopup = ({ setShowLoging }) => {
   const [currState, setCurrState] = useState("Login");
