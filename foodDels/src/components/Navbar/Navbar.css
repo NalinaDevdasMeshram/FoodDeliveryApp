@@ -11,13 +11,12 @@
 .navbar-Menu {
   display: flex;
   list-style: none;
-
-  color: #49557e;
   gap: 20px;
   font-size: 18px;
 }
 .navbar-Menu a {
   text-decoration: none;
+  color: #49557e;
 }
 .navbar-right {
   display: flex;
