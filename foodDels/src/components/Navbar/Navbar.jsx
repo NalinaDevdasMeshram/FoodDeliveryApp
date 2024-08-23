@@ -1,36 +1,42 @@
+/* eslint-disable react/prop-types */
 import "./Navbar.css";
 import { assets } from "../../assets/assets";
 import { useState } from "react";
-const Navbar = () => {
+import { Link } from "react-router-dom";
+const Navbar = ({ setShowLoging }) => {
   const [menu, setMenu] = useState("Home");
   return (
     <div className="navbar">
       <img src={assets.logo} alt="img" className="logo" />
       <ul className="navbar-Menu">
-        <li
+        <Link
+          to="/"
           onClick={() => setMenu("Home")}
           className={menu === "Home" ? "active" : ""}
         >
           Home
-        </li>
-        <li
+        </Link>
+        <a
+          href="#explore-menu"
           onClick={() => setMenu("Menu")}
           className={menu === "Menu" ? "active" : ""}
         >
           Menu
-        </li>
-        <li
+        </a>
+        <a
+          href="#App-Download"
           onClick={() => setMenu("Mobile-App")}
           className={menu === "Mobile-App" ? "active" : ""}
         >
           Mobile-App
-        </li>
-        <li
+        </a>
+        <a
+          href="#footer"
           onClick={() => setMenu("Contact Us")}
           className={menu === "Contact Us" ? "active" : ""}
         >
           Contact Us
-        </li>
+        </a>
       </ul>
       <div className="navbar-right">
         <img src={assets.search_icon} alt="img" />
@@ -38,7 +44,7 @@ const Navbar = () => {
           <img src={assets.basket_icon} alt="img" />
           <div className="dot"></div>
         </div>
-        <button>Sign in</button>
+        <button onClick={() => setShowLoging(true)}>Sign in</button>
       </div>
     </div>
   );
