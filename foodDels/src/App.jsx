@@ -1,7 +1,7 @@
-// import Card from "../../foodDels/src/Pages/Cards/Cards";
+import Cards from "../../foodDels/src/Pages/Cards/Cards";
 import { useState } from "react";
 import Home from "../../foodDels/src/Pages/Home/Home";
-// import Placeorder from "../../foodDels/src/Pages/PlaceOrder/Placeorder";
+import PlaceOrder from "../../foodDels/src/Pages/PlaceOrder/PlaceOrder";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import { Routes, Route } from "react-router-dom";
@@ -16,8 +16,8 @@ function App() {
         <Navbar setShowLoging={setShowLoging} />
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/" element={<Card />} />
-          <Route path="/" element={<Placeorder />} /> */}
+          <Route path="/Cards" element={<Cards />} />
+          <Route path="/" element={<PlaceOrder />} />
         </Routes>
       </div>
       <Footer />
