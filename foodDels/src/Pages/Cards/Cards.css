@@ -95,6 +95,6 @@
   }
   .cart_promocode {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
   }
 }

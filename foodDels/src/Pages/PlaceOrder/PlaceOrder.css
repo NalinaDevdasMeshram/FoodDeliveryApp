@@ -30,6 +30,27 @@
   width: 100%;
   max-width: max(40%, 500px);
 }
-.place_order .cart_total button {
-  margin: 30px;
+.place_order .cart_total_item button {
+  color: #ffffff;
+  background-color: tomato;
+  padding: 10px 15px;
+  width: max(10vw, 200px);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight: 600;
+}
+@media (max-width: 750px) {
+  .place_order {
+    flex-direction: column;
+  }
+  .place_order_left .place_order_right {
+    max-width: 100%;
+  }
+  .cart_total_item .cart_total_details {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+  }
 }
